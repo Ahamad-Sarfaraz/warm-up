@@ -18,7 +18,7 @@ public class Wipro {
                 .toList();
         char [] strCharArr = str.toCharArray();
         for(String key: duplicateKey){
-            strCharArr[str.indexOf(key)]= (char) "2"+key;
+           // strCharArr[str.indexOf(key)]= (char) "2"+key;
 
         }
         result = new String(strCharArr);
