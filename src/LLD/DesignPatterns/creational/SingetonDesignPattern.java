@@ -9,7 +9,9 @@ public class SingetonDesignPattern {
 
         System.out.println(st1 == st2);
         System.out.println(st2 == st3);
+
         System.out.println(st3 == st4);
+
     }
 }
 
@@ -22,7 +24,7 @@ class Student {
     }
 
     public static Student getInstance() {
-        if (instance == null) return instance = new Student();
-        else return instance;
+        if (instance == null) instance = new Student();
+        return instance;
     }
 }
